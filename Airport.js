@@ -22,7 +22,7 @@ class Airport {
         this.planes.forEach(plane =>{
             if (plane instanceof type){
                 planeByType.push(plane);
-            }else {}
+            }
         })
         return planeByType;
     }

@@ -70,10 +70,9 @@ describe('My Test', () => {
     it('should check that there is at least one bomber in military planes', () => {
         let airport = new Airport(planes);
         let bomberMilitaryPlanes  = airport.getBomberMilitaryPlanes ();
-        let flag = false;
         for (let militaryPlane of bomberMilitaryPlanes) {
-            if (militaryPlane.getMilitaryType() === MilitaryType.BOMBER) {
-                flag = true;
+            if (militaryPlane.getMilitaryType() === MilitaryType.BOMBER){
+                assert.isTrue(true);
             }
             else{
                 assert.fail("Test failed!");
@@ -87,8 +86,8 @@ describe('My Test', () => {
         let airport = new Airport(planes);
         let bomberMilitaryPlanes  = airport.getExperimentalPlanes ();
         let hasUnclassifiedPlanes  = false;
-        for (let ExperimentalPlane  of bomberMilitaryPlanes) {
-            if (ExperimentalPlane.classificationLevel === ClassificationLevel.UNCLASSIFIED) {
+        for (let testExperimentalPlane  of bomberMilitaryPlanes) {
+            if (testExperimentalPlane.classificationLevel === ClassificationLevel.UNCLASSIFIED) {
                 hasUnclassifiedPlanes = true;
 
         }
