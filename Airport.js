@@ -52,12 +52,12 @@ class Airport {
     }
 
     getTransportMilitaryPlanes() {
-        return this.getMilitaryPlanesByType(MilitaryType.TYPE_TRANSPORT);
+        return this.getMilitaryPlanesByType(MilitaryType.TRANSPORT);
     }
 
 
     getBomberMilitaryPlanes() {
-        return this.getMilitaryPlanesByType(MilitaryType.TYPE_BOMBER);
+        return this.getMilitaryPlanesByType(MilitaryType.BOMBER);
     }
 
     constructor(planes) {
